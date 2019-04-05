@@ -1,0 +1,16 @@
+<header style="background-color: #113F6D" class="mb-4">
+  <div class="container mx-auto px-4 py-4">
+      <ul class="flex items-center justify-between list-reset capitalize no-underline">
+          <li><a class="text-white no-underline" href="/">Front</a></li>
+          @loggedIn
+          <li><a class="text-white no-underline" href="/startups">Startups</a></li>
+          <li><a class="text-white no-underline" href="/submit-startup">Submit Start up</a></li>
+          <li><a class="text-white no-underline" href="/logout">Log Out</a></li>
+          @else
+          <li><a class="text-white no-underline" href="/login">Login</a></li>
+          <li><a class="text-white no-underline" href="/register">Register</a></li>  
+
+          @endloggedIn
+        </ul>
+  </div>
+</header>
